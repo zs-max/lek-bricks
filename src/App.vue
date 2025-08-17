@@ -7,15 +7,24 @@
     <li>支持 tsx</li>
     <li>eslint</li>
     <li>简单易用可扩展</li>
+    <HelloWorld></HelloWorld>
   </ul>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import {defineComponent, getCurrentInstance, inject, onMounted} from 'vue';
 
 export default defineComponent({
   name: 'App',
+  setup(){
+    console.log(inject('test'))
+    onMounted(()=>{
+      getCurrentInstance()?.appContext.config.globalProperties.$echo('hello world')
+    })
+    return {}
+  }
 });
+
 </script>
 
 <style>
