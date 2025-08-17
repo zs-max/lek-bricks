@@ -7,7 +7,7 @@
 import { defineComponent } from 'vue'
 import useStylePick from '../../hooks/useStylePick'
 import useComponentClick from '../../hooks/useComponentClick'
-import { componentsDefaultProps, transformToComponentProps, isEditingProp } from '../../defaultProps'
+import { componentsDefaultProps, transformToComponentProps, isEditingProp } from '@/defaultProps'
 const extraProps = {
   tag: {
     type: String,
