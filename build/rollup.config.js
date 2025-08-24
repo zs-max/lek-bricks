@@ -12,7 +12,9 @@ const overrides = {
 };
 
 // file：添加一个函数，动态生成名称，file类型有两种 esm 和umd
-const file = type => `dist/${name}.${type}.js`
+ const file = type => `dist/${name}.${type}.js`
+
+export {name,file}
 export default {
   input: 'src/index.ts', //使用组件库入口文件
   output: {
@@ -20,7 +22,8 @@ export default {
     file: file('esm'),
     format: 'es',
     globals: {
-      vue: 'Vue'
+      vue: 'Vue',
+      'lodash-es': '_',
     }
   },
   // external: ['vue', 'lodash-es'],
