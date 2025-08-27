@@ -1,10 +1,17 @@
 {
   "name": "lek-bricks",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "main": "dist/lek-bricks.umd.js",
   "module": "dist/lek-bricks.esm.js",
   "types": "dist/index.d.ts",
+  "author": "lek",
+  "license": "MIT",
+  "keywords": ["vue3","components","UI"],
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/li-wen-kai/lek-bricks.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "pnpm run clean && pnpm run build:esm && pnpm run build:umd",
@@ -17,6 +24,9 @@
     "core-js": "^3.6.5",
     "lodash-es": "^4.17.15"
   },
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "vue": "^3.0.0"
   },
