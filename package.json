@@ -2,6 +2,9 @@
   "name": "lek-bricks",
   "version": "1.0.0",
   "private": true,
+  "main": "dist/lek-bricks.umd.js",
+  "module": "dist/lek-bricks.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "pnpm run clean && pnpm run build:esm && pnpm run build:umd",
