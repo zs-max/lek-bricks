@@ -1,6 +1,6 @@
 {
   "name": "lek-bricks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "main": "dist/lek-bricks.umd.js",
   "module": "dist/lek-bricks.esm.js",
@@ -18,7 +18,8 @@
     "lint": "vue-cli-service lint",
     "build:esm": "rollup -c build/rollup.esm.config.js",
     "build:umd": "rollup -c build/rollup.umd.config.js",
-    "clean": "rimraf ./dist"
+    "clean": "rimraf ./dist",
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "core-js": "^3.6.5",
