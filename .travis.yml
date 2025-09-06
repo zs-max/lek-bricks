@@ -3,7 +3,7 @@ node_js:
   - node
 branches:
   only:
-    - main
+    - master
 deploy:
   provider: npm
   email: lk_demo@163.com
