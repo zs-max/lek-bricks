@@ -6,7 +6,7 @@
 #### Software Architecture
 Software architecture description
 
-#### Installation aaa
+#### Installation
 
 1.  xxxx
 2.  xxxx
