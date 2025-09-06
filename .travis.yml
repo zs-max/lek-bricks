@@ -1,3 +1,11 @@
 language: node_js
 node_js:
   - node
+deploy:
+  provider: npm
+  email: lk_demo@163.com
+  skip_cleanup: true
+  api_key:
+    secure: $NPM_API_KEY
+  on:
+    tags: true

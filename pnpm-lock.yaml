@@ -14,6 +14,9 @@ importers:
       lodash-es:
         specifier: ^4.17.15
         version: 4.17.21
+      travis:
+        specifier: ^0.1.1
+        version: 0.1.1
     devDependencies:
       '@rollup/plugin-node-resolve':
         specifier: ^9.0.0
@@ -4924,6 +4927,9 @@ packages:
   tough-cookie@2.5.0:
     resolution: {integrity: sha512-nlLsUzgm1kfLXSXfRZMc1KLAugd4hqJHDTvc2hDIwS3mZAfMEuMbc03SujMF+GEcpaX/qboeycw6iO8JwVv2+g==}
     engines: {node: '>=0.8'}
+
+  travis@0.1.1:
+    resolution: {integrity: sha512-df+lXMENpsegelKLwq2FD7uuIMMjzfhUZLYv8gbDXkJ952eF1PaeXy2f/4H635vBEmQUZNjOYZtge3nOkd6G8A==}
 
   tryer@1.0.1:
     resolution: {integrity: sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==}
@@ -11255,6 +11261,8 @@ snapshots:
     dependencies:
       psl: 1.15.0
       punycode: 2.3.1
+
+  travis@0.1.1: {}
 
   tryer@1.0.1: {}
 
