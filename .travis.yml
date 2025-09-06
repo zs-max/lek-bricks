@@ -6,6 +6,6 @@ deploy:
   email: lk_demo@163.com
   skip_cleanup: true
   api_key:
-    secure: $NPM_API_KEY
+    secure: $NPM_API_KEY1
   on:
     tags: true
